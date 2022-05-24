@@ -3,31 +3,32 @@
     padding: 0;
 }
 
-.home {
+.home{
     background-color: #130f40;
     background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
     min-height: 100vh;
-
+    box-shadow: 0px 6px 0px 10px black;
 }
 
 .container {
     width: 80%;
     height: 40px;
-    position: relative;
+    position: fixed;
     top: 40px;
     margin: 0 auto;
     min-height: 100vh;
 }
 
 #logo {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     color: white;
-    width: 170px;
+    width: 140px;
     height: auto;
-    margin-left: -100px;
-    margin-top: -30px;
+    margin-left: 25px;
+    margin-top: 25px;
+    z-index: 1000;
 }
 
 #logo img {
@@ -84,7 +85,7 @@
     transform: skewX(0deg) translate(100%, 0);
     transform-origin: top right;
     transition: all .2s ease-in;
-    z-index: 1;
+    z-index: 1000;
     height: 100%;
 }
 
@@ -100,7 +101,7 @@
 .navigation-menu ul li {
     position: relative;
     z-index: 999;
-    font-size: 32px;
+    font-size: 45px;
     color: black;
     line-height: 64px;
 }
@@ -163,18 +164,11 @@
 
 
 .button {
-
-
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: normal;
-    font-size: 12px;
+    /* font-size: 12px; */
     margin-top: 40px;
-
-
 }
-
-
-
 
 
 .btn1 {
@@ -182,20 +176,16 @@
     background: #f20c4a;
     text-decoration: none;
     color: white;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 20px;
     font-size: 20px;
 }
 
-.btn2 {
-    padding: 12px 25px;
-    background: #f4f6f8;
-    text-decoration: none;
-    color: #000;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    font-size: 20px;
+#google-icon{
+    width: 31px;
+    height: auto;
+    padding-bottom: 6px;
 }
+
 
 .btn1:hover {
     text-decoration: none;
@@ -203,10 +193,14 @@
     background-color: white;
 }
 
-.btn2:hover {
-    text-decoration: none;
-    color: white;
-    background: #f20c4a;
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95vw;
+    height: 95vh;
+    margin: auto;
 }
 
 .bi-x-square-fill {
@@ -218,11 +212,11 @@
     transition: color 0.9s;
 }
 
-ul li a {
+.navigation-menu ul li a {
     cursor: pointer;
 }
 
-ul li a:hover {
+.navigation-menu ul li a:hover {
     color: snow;
 }
 
@@ -230,12 +224,13 @@ ul li a:hover {
     color: snow;
 }
 .rangoli{
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    right: 0;
+    right: 0; */
     width: 600px;
     height: 600px;
     margin-top: 30px;
+    overflow: hidden;
 }
 #rangoli {
     /* position: fixed;
@@ -243,10 +238,10 @@ ul li a:hover {
     top: 0; */
     width: 100%;
     height: 100%;
-    padding: 20px;
     transition: 0.3s0 color ease-in,0.3s transform ease-in;
     box-sizing: border-box;
     animation: rotation 100s infinite linear;
+    overflow:none;
   }
   
   @keyframes rotation {
@@ -257,47 +252,299 @@ ul li a:hover {
       transform: rotate(359deg);
     }
   }
-  
-.vwlogo{
+.main-content{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+}
+.vwlogo{
     width: 120px;
-    height: 120px;
-    margin-top: 180px;
-    margin-left: -80px;
+    height: auto;
+    display: flex;
+    margin-right: auto;
 }
 .vwlogo img{
     width: 100%;
     height: 100%;
 }
-.main-content{
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 10px;
-    margin-left: 40px;
-}
+
 #varanasi-span{
     font-size: 80px;
     padding-top: 10px;
     font-family: 'Kaushan Script', cursive;
+    color: #fff;
 }
 #word-span{
     display: block;
     font-size: 80px;
-    margin-left: -45px;
     font-family: 'Kaushan Script', cursive;
+    color: #fff;
 }
-@media screen and (max-width:900px) {
-    .navigation-menu {
-        width: 70%;
+
+.event-heading, #about h1{
+    font-size: 75px;
+    text-align: center;
+    font-family: 'Sofia', cursive;
+    color: #fff;
+}
+
+/* code for event */
+#event{
+    height: 100vh;
+    width: auto;
+    background-color: #4834d4;
+background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+margin-top: -15px;
+box-shadow: 0px 6px 0px 10px black;
+}
+
+/* code for about us */
+#about{
+    background-color: #130f40;
+    background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+min-height: 100vh;
+margin-top: -15px;
+}
+.about-container{
+    width: 80vw;
+    margin: auto;
+    margin-top: 120px;
+}
+.lit-vw-container{
+    width: 85vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.lit-container,.vw-container{
+    width: 40%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.lit-continer-img,.vw-continer-img
+{
+    width: 200px;
+    height: auto;
+    margin-top: 40px;
+}
+.lit-continer-img img, .vw-continer-img img{
+    width: 100%;
+    height: 100%;
+}
+.vw-container p, .lit-container p{
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.slider, 
+.slider > div {
+    /* Images default to Center Center. Maybe try 'center top'? */
+    background-position: center center;
+    display: block;
+    width: 100%;
+    height: 500px;
+    /* height: 100vh; *//* If you want fullscreen */
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    overflow: hidden;
+    -moz-transition: transform .4s;
+    -o-transition: transform .4s;
+    -webkit-transition: transform .4s;
+    transition: transform .4s;
+}
+
+.slider > div {
+    position: absolute;
+}
+
+.slider > i {
+    color: #5bbd72;
+    position: absolute;
+    font-size: 60px;
+    margin: 20px;
+    top: 40%;
+    text-shadow: 0 10px 2px #223422;
+    transition: .3s;
+    width: 30px;
+    padding: 10px 13px;
+    background: #fff;
+    background: rgba(255, 255, 255, .3);
+    cursor: pointer;
+    line-height: 0;
+    box-sizing: content-box;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.slider > i svg {
+    margin-top: 3px;
+}
+
+.slider > .left {
+    left: -100px;
+}
+.slider > .right {
+    right: -100px;
+}
+.slider:hover > .left {
+    left: 0;
+}
+.slider:hover > .right {
+    right: 0;
+}
+
+.slider > i:hover {
+    background:#fff;
+    background: rgba(255, 255, 255, .8);
+    transform: translateX(-2px);
+}
+
+.slider > i.right:hover {
+    transform: translateX(2px);
+}
+
+.slider > i.right:active,
+.slider > i.left:active {
+    transform: translateY(1px);
+}
+
+.slider:hover > div {
+    transform: scale(1.01);
+}
+
+.hoverZoomOff:hover > div {
+    transform: scale(1);
+}
+
+.slider > ul {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 4;
+    padding: 0;
+    margin: 0;
+    transform: translateX(-50%);
+}
+
+.slider > ul > li {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    list-style: none;
+    float: left;
+    margin: 10px 10px 0;
+    cursor: pointer;
+    border: 1px solid #fff;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.slider > ul > .showli {
+    background-color: #7EC03D;
+    -moz-animation: boing .5s forwards;
+    -o-animation: boing .5s forwards;
+    -webkit-animation: boing .5s forwards;
+    animation: boing .5s forwards;
+}
+
+.slider > ul > li:hover {
+    background-color: #7EC03D;
+}
+
+.slider > .show {
+    z-index: 1;
+}
+
+.hideDots > ul {
+    display: none;
+}
+
+.showArrows > .left {
+    left: 0;
+}
+
+.showArrows > .right {
+    right: 0;
+}
+
+.titleBar {
+    z-index: 2;
+    display: inline-block;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    transform: translateY(100%);
+    padding: 20px 30px;
+    transition: .3s;
+    color: #fff;
+}
+
+.titleBar {
+    transform: translate(-20px, 30px);
+    transition: all 700ms cubic-bezier(0.37, 0.31, 0.2, 0.85) 200ms;
+    opacity: 0;
+}
+
+.titleBarTop .titleBar {
+    transform: translate(-20px, -30px);
+}
+
+.slider:hover .titleBar,
+.slider:hover .titleBar  {
+    transform: translate(0);
+    opacity: 1;
+}
+
+.titleBarTop .titleBar {
+    top: 0;
+    bottom: initial;
+    transform: translateY(-100%);
+}
+
+.slider > div span {
+    display: block;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+}
+
+
+@keyframes boing {
+    0% {
+        transform: scale(1.2);
     }
-
-    .navigation-menu.active {
-        transform: skewX(0deg) translate(0, 0);
+    40% {
+        transform: scale(.6);
     }
-
-    .navigation-menu ul {
-        transform: skewX(0deg);
-
+    60% {
+        transform: scale(1.2);
+    }
+    80% {
+        transform: scale(.8);
+    }
+    100% {
+        transform: scale(1);
     }
 }
+
+/* -------------------------------------- */
+
+
+
+
