@@ -97,3 +97,48 @@
 
     }
 }
+
+@media screen and (max-width:650px)
+{
+    #logo{
+        width: 60px;
+        height: auto;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .navigation-button{
+        top: 14px;
+        right: 10px;
+    }
+    .navigation-button .fa{
+        padding: 5px;
+        font-size: 15px;
+    }
+    .vwlogo{
+        width: 60px;
+    }
+    #varanasi-span{
+        font-size: 45px;
+        padding-top: 3px;
+    }
+    #word-span{
+        font-size: 45px;
+    }
+    .button{
+        margin-top: 5px;
+    }
+    #google-icon{
+        width: 18px;
+        padding-top: 4px;
+    }
+    .btn1{
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+    .rangoli{
+        width: 250px;
+        height: 250px;
+        margin: auto;
+        margin-top: 50px;
+    }
+}
