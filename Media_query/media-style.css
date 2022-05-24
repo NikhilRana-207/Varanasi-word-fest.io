@@ -1,65 +1,77 @@
 /* media query */
 
 /* media query for 1250px */
-@media screen and (max-width:1350px)
-{
-    #logo{
+@media screen and (max-width:1350px) {
+    #logo {
         width: 100px;
     }
-    .fa-bars{
+
+    .fa-bars {
         font-size: 20px;
         padding: 6px 3px;
     }
-    .vwlogo{
+
+    .vwlogo {
         width: 100px;
         height: auto;
     }
-    #varanasi-span{
+
+    #varanasi-span {
         font-size: 60px;
         padding-top: 22px;
     }
-    #word-span{
+
+    #word-span {
         font-size: 60px;
     }
-    .btn1{
+
+    .btn1 {
         font-size: 16px;
         margin-left: -15px;
     }
-    .rangoli{
+
+    .rangoli {
         width: 550px;
         height: 550px;
     }
-    .navigation-menu{
+
+    .navigation-menu {
         width: 55%;
     }
-    .navigation-menu ul li a{
+
+    .navigation-menu ul li a {
         font-size: 40px;
     }
-    .navigation-button{
+
+    .navigation-button {
         right: 50px;
     }
 }
+
 @media screen and (max-width:1200px) {
-    .main-content{
+    .main-content {
         margin-left: 70px;
     }
-    .navigation-menu{
+
+    .navigation-menu {
         width: 58%;
     }
 }
-@media screen and (max-width:1100px)
-{
-    .rangoli{
+
+@media screen and (max-width:1100px) {
+    .rangoli {
         width: 500px;
         height: 500px;
         margin-top: 50px;
     }
-    .main-content{
+
+    .main-content {
         margin-left: 35px;
     }
 }
+
 @media screen and (max-width:1000px) {
-    .hero{
+    .hero {
         flex-direction: column;
         align-items: center;
         min-height: 100vh;
@@ -67,25 +79,29 @@
         justify-content: center;
         padding-bottom: 80px;
     }
-    
-    .vwlogo{
+
+    .vwlogo {
         margin-top: 100px;
         margin-left: -10px;
     }
-    .main-content{
+
+    .main-content {
         margin-left: 0px;
         margin-top: 45px;
     }
-    .rangoli{
+
+    .rangoli {
         width: 400px;
         height: 400px;
     }
-    #rangoli{
+
+    #rangoli {
         width: 100%;
         height: 100%;
     }
+
     .navigation-menu {
-        width: 70%;
+        width: 200px;
     }
 
     .navigation-menu.active {
@@ -94,51 +110,81 @@
 
     .navigation-menu ul {
         transform: skewX(0deg);
+        top: 0;
+        left: 0;
+        text-align: left;
+        width: 180px;
+    }
 
+    .navigation-menu ul li {
+        line-height: 30px;
+    }
+
+    .navigation-menu ul li a {
+        font-size: 20px;
+    }
+
+    .bi-x-square-fill {
+        margin-bottom: 10px;
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
     }
 }
 
-@media screen and (max-width:650px)
-{
-    #logo{
+@media screen and (max-width:650px) {
+    #logo {
         width: 60px;
         height: auto;
         margin-left: 10px;
         margin-top: 10px;
     }
-    .navigation-button{
+
+    .navigation-button {
         top: 14px;
         right: 10px;
     }
-    .navigation-button .fa{
+
+    .navigation-button .fa {
         padding: 5px;
         font-size: 15px;
     }
-    .vwlogo{
+
+    .vwlogo {
         width: 60px;
     }
-    #varanasi-span{
+
+    #varanasi-span {
         font-size: 45px;
         padding-top: 3px;
     }
-    #word-span{
+
+    #word-span {
         font-size: 45px;
     }
-    .button{
+
+    .button {
         margin-top: 5px;
     }
-    #google-icon{
+
+    #google-icon {
         width: 18px;
         padding-top: 4px;
     }
-    .btn1{
+
+    .btn1 {
         font-size: 10px;
         padding: 5px 10px;
     }
-    .rangoli{
+
+    .rangoli {
         width: 250px;
         height: 250px;
         margin: auto;
         margin-top: 50px;
+    }
+
+    .navigation-menu ul li {
+        font-size: 25px;
     }
 }

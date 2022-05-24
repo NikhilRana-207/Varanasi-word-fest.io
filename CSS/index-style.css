@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.home{
+.home {
     background-color: #130f40;
     background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
     min-height: 100vh;
@@ -12,7 +12,6 @@
 
 .container {
     width: 80%;
-    /* position: fixed; */
     position: absolute;
     top: 40px;
     margin: 0 auto;
@@ -63,10 +62,11 @@
     color: white;
 }
 
-.navigation-button .fa:hover{
+.navigation-button .fa:hover {
     border: 2px solid #c81f70;
     color: #c81f70;
 }
+
 .navigation-menu ul li {
     list-style: none;
     font-family: impact;
@@ -166,7 +166,7 @@
 .button {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: normal;
-    /* font-size: 12px; */
+    z-index: 5;
     margin-top: 40px;
 }
 
@@ -180,7 +180,7 @@
     font-size: 20px;
 }
 
-#google-icon{
+#google-icon {
     width: 31px;
     height: auto;
     padding-bottom: 6px;
@@ -193,7 +193,7 @@
     background-color: white;
 }
 
-.hero{
+.hero {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -224,7 +224,8 @@
 .bi-x-square-fill:hover {
     color: snow;
 }
-.rangoli{
+
+.rangoli {
     /* position: absolute;
     top: 0;
     right: 0; */
@@ -233,57 +234,64 @@
     margin-top: 30px;
     overflow: hidden;
 }
+
 #rangoli {
     /* position: fixed;
     left: 0;
     top: 0; */
     width: 100%;
     height: 100%;
-    transition: 0.3s0 color ease-in,0.3s transform ease-in;
+    transition: 0.3s0 color ease-in, 0.3s transform ease-in;
     box-sizing: border-box;
     animation: rotation 100s infinite linear;
-  }
-  
-  @keyframes rotation {
+}
+
+@keyframes rotation {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     to {
-      transform: rotate(359deg);
+        transform: rotate(359deg);
     }
-  }
-.main-content{
+}
+
+.main-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-left: 120px;
 }
-.vwlogo{
+
+.vwlogo {
     width: 120px;
     height: auto;
     display: flex;
     margin-right: auto;
 }
-.vwlogo img{
+
+.vwlogo img {
     width: 100%;
     height: 100%;
 }
 
-#varanasi-span{
+#varanasi-span {
     font-size: 80px;
     padding-top: 10px;
     font-family: 'Kaushan Script', cursive;
     color: #fff;
 }
-#word-span{
+
+#word-span {
     display: block;
     font-size: 80px;
     font-family: 'Kaushan Script', cursive;
     color: #fff;
 }
 
-.event-heading, #about h1{
+.event-heading,
+#about h1 {
     font-size: 75px;
     text-align: center;
     font-family: 'Sofia', cursive;
@@ -291,34 +299,38 @@
 }
 
 /* code for event */
-#event{
+#event {
     height: 100vh;
     width: auto;
     background-color: #4834d4;
-background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
-margin-top: -15px;
-box-shadow: 0px 6px 0px 10px black;
+    background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+    margin-top: -15px;
+    box-shadow: 0px 6px 0px 10px black;
 }
 
 /* code for about us */
-#about{
+#about {
     background-color: #130f40;
     background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
-min-height: 100vh;
-margin-top: -15px;
+    min-height: 100vh;
+    margin-top: -15px;
 }
-.about-container{
+
+.about-container {
     width: 80vw;
     margin: auto;
     margin-top: 120px;
 }
-.lit-vw-container{
+
+.lit-vw-container {
     width: 85vw;
     margin: auto;
     display: flex;
     justify-content: center;
 }
-.lit-container,.vw-container{
+
+.lit-container,
+.vw-container {
     width: 40%;
     height: auto;
     margin: auto;
@@ -326,30 +338,36 @@ margin-top: -15px;
     align-items: center;
     flex-direction: column;
 }
-.lit-continer-img,.vw-continer-img
-{
+
+.lit-continer-img,
+.vw-continer-img {
     width: 200px;
     height: auto;
     margin-top: 40px;
 }
-.lit-continer-img img, .vw-continer-img img{
+
+.lit-continer-img img,
+.vw-continer-img img {
     width: 100%;
     height: 100%;
 }
-.vw-container p, .lit-container p{
+
+.vw-container p,
+.lit-container p {
     color: #fff;
     font-size: 20px;
 }
 
 
-.slider, 
-.slider > div {
+.slider,
+.slider>div {
     /* Images default to Center Center. Maybe try 'center top'? */
     background-position: center center;
     display: block;
     width: 100%;
     height: 500px;
-    /* height: 100vh; *//* If you want fullscreen */
+    /* height: 100vh; */
+    /* If you want fullscreen */
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
@@ -361,11 +379,11 @@ margin-top: -15px;
     transition: transform .4s;
 }
 
-.slider > div {
+.slider>div {
     position: absolute;
 }
 
-.slider > i {
+.slider>i {
     color: #5bbd72;
     position: absolute;
     font-size: 60px;
@@ -384,47 +402,50 @@ margin-top: -15px;
     z-index: 1;
 }
 
-.slider > i svg {
+.slider>i svg {
     margin-top: 3px;
 }
 
-.slider > .left {
+.slider>.left {
     left: -100px;
 }
-.slider > .right {
+
+.slider>.right {
     right: -100px;
 }
-.slider:hover > .left {
+
+.slider:hover>.left {
     left: 0;
 }
-.slider:hover > .right {
+
+.slider:hover>.right {
     right: 0;
 }
 
-.slider > i:hover {
-    background:#fff;
+.slider>i:hover {
+    background: #fff;
     background: rgba(255, 255, 255, .8);
     transform: translateX(-2px);
 }
 
-.slider > i.right:hover {
+.slider>i.right:hover {
     transform: translateX(2px);
 }
 
-.slider > i.right:active,
-.slider > i.left:active {
+.slider>i.right:active,
+.slider>i.left:active {
     transform: translateY(1px);
 }
 
-.slider:hover > div {
+.slider:hover>div {
     transform: scale(1.01);
 }
 
-.hoverZoomOff:hover > div {
+.hoverZoomOff:hover>div {
     transform: scale(1);
 }
 
-.slider > ul {
+.slider>ul {
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -434,7 +455,7 @@ margin-top: -15px;
     transform: translateX(-50%);
 }
 
-.slider > ul > li {
+.slider>ul>li {
     padding: 0;
     width: 20px;
     height: 20px;
@@ -450,7 +471,7 @@ margin-top: -15px;
     transition: .3s;
 }
 
-.slider > ul > .showli {
+.slider>ul>.showli {
     background-color: #7EC03D;
     -moz-animation: boing .5s forwards;
     -o-animation: boing .5s forwards;
@@ -458,30 +479,30 @@ margin-top: -15px;
     animation: boing .5s forwards;
 }
 
-.slider > ul > li:hover {
+.slider>ul>li:hover {
     background-color: #7EC03D;
 }
 
-.slider > .show {
+.slider>.show {
     z-index: 1;
 }
 
-.hideDots > ul {
+.hideDots>ul {
     display: none;
 }
 
-.showArrows > .left {
+.showArrows>.left {
     left: 0;
 }
 
-.showArrows > .right {
+.showArrows>.right {
     right: 0;
 }
 
 .titleBar {
     z-index: 2;
     display: inline-block;
-    background: rgba(0,0,0,.5);
+    background: rgba(0, 0, 0, .5);
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -502,7 +523,7 @@ margin-top: -15px;
 }
 
 .slider:hover .titleBar,
-.slider:hover .titleBar  {
+.slider:hover .titleBar {
     transform: translate(0);
     opacity: 1;
 }
@@ -513,9 +534,9 @@ margin-top: -15px;
     transform: translateY(-100%);
 }
 
-.slider > div span {
+.slider>div span {
     display: block;
-    background: rgba(0,0,0,.5);
+    background: rgba(0, 0, 0, .5);
     position: absolute;
     bottom: 0;
     color: #fff;
@@ -529,22 +550,22 @@ margin-top: -15px;
     0% {
         transform: scale(1.2);
     }
+
     40% {
         transform: scale(.6);
     }
+
     60% {
         transform: scale(1.2);
     }
+
     80% {
         transform: scale(.8);
     }
+
     100% {
         transform: scale(1);
     }
 }
 
 /* -------------------------------------- */
-
-
-
-
