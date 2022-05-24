@@ -64,6 +64,8 @@
         align-items: center;
         min-height: 100vh;
         margin-top: -35px;
+        justify-content: center;
+        padding-bottom: 80px;
     }
     
     .vwlogo{
@@ -72,10 +74,15 @@
     }
     .main-content{
         margin-left: 0px;
+        margin-top: 45px;
     }
     .rangoli{
         width: 400px;
         height: 400px;
+    }
+    #rangoli{
+        width: 100%;
+        height: 100%;
     }
     .navigation-menu {
         width: 70%;

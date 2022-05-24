@@ -12,8 +12,8 @@
 
 .container {
     width: 80%;
-    height: 40px;
-    position: fixed;
+    /* position: fixed; */
+    position: absolute;
     top: 40px;
     margin: 0 auto;
     min-height: 100vh;
@@ -199,7 +199,8 @@
     justify-content: space-between;
     align-items: center;
     width: 95vw;
-    height: 95vh;
+    min-height: 100vh;
+    height: auto;
     margin: auto;
 }
 
@@ -241,7 +242,6 @@
     transition: 0.3s0 color ease-in,0.3s transform ease-in;
     box-sizing: border-box;
     animation: rotation 100s infinite linear;
-    overflow:none;
   }
   
   @keyframes rotation {
